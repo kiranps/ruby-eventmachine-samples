@@ -8,7 +8,10 @@ EventMachine.run {
   page.callback {
     p "first callback"
     about = EventMachine::HttpRequest.new('http://google.com/search?q=eventmachine').get
-    about.callback { p "second callback" }
+    about.callback { 
+      p "second callback" 
+      EventMachine.stop
+    }
     about.errback  { }
   }
   p "end"

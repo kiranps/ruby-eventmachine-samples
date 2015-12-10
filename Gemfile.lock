@@ -13,6 +13,7 @@ GEM
       eventmachine (>= 1.0.0.beta.4)
     eventmachine (1.0.8)
     http_parser.rb (0.6.0)
+    mysql2 (0.4.2)
 
 PLATFORMS
   ruby
@@ -20,6 +21,7 @@ PLATFORMS
 DEPENDENCIES
   em-http-request
   eventmachine
+  mysql2
 
 BUNDLED WITH
-   1.10.5
+   1.10.6
